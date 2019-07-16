@@ -1,0 +1,26 @@
+:root
+{
+    /* Header - Colour */
+    --header-bg: blue;
+
+    /* Navbar - Colour */
+    --nav-fg: #DCDCDC;
+    --nav-outline: #C0C0C0;
+    --nav-highlight: #A9A9A9;
+}
+
+#header
+{
+    background-color: var(--header-bg);
+}
+
+#main-nav
+{
+    background-color: var(--nav-fg);
+    border: 1px solid var(--nav-outline);
+}
+
+#main-nav li:hover
+{
+    background-color: var(--nav-highlight);
+}
