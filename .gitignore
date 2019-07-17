@@ -2,3 +2,4 @@
 *.jpeg
 *.JPG
 build/
+*.png

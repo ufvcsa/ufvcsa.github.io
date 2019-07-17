@@ -1,7 +1,7 @@
 :root
 {
     /* Header - Colour */
-    --header-bg: blue;
+    --header-bg: white;
 
     /* Navbar - Colour */
     --nav-fg: #DCDCDC;
@@ -12,6 +12,10 @@
 #header
 {
     background-color: var(--header-bg);
+    overflow: hidden;
+    margin-left: var(--site-left);
+    margin-right: var(--site-right);
+    width: var(--site-width);
 }
 
 #main-nav
