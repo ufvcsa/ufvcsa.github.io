@@ -6,7 +6,7 @@
     --site-right: 10%;
 
     /* Header - Dimensions */
-    --header-height: 9.6em;
+    --header-height: 200px;
 
     /* Navbar - Dimensions */
     --nav-height: 64px;
@@ -34,7 +34,7 @@ div
 }
 #header img
 {
-    margin-top: -135px;
+    margin-top: -110px;
     width: 100%;
     max-width: 100%;
 }

@@ -1,12 +1,15 @@
 :root
 {
     /* Header - Colour */
-    --header-bg: white;
+/*    --header-bg: white;*/
 
     /* Navbar - Colour */
-    --nav-fg: #DCDCDC;
-    --nav-outline: #C0C0C0;
-    --nav-highlight: #A9A9A9;
+/*    --nav-fg: #DCDCDC;*/
+/*    --nav-outline: #C0C0C0;*/
+/*    --nav-highlight: #A9A9A9;*/
+    --nav-bg: #2191fb;
+    --nav-outline: #49516f;
+    --nav-highlight: #3973a3;
 }
 
 #header
@@ -20,7 +23,7 @@
 
 #main-nav
 {
-    background-color: var(--nav-fg);
+    background-color: var(--nav-bg);
     border: 1px solid var(--nav-outline);
 }
 
