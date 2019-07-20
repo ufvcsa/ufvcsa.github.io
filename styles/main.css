@@ -9,7 +9,12 @@
     --header-height: 200px;
 
     /* Navbar - Dimensions */
-    --nav-height: 64px;
+    --nav-height: 48px;
+    --nav-spacing: 42px;
+
+    /* Navbar - Button Style */
+    /* center, left, right */
+    --nav-style: center;
 }
 
 div
@@ -74,8 +79,8 @@ div
 
 #main-nav li
 {
-    padding-left: 1.2em;
-    padding-right: 1.2em;
+    padding-left: var(--nav-spacing);
+    padding-right: var(--nav-spacing);
 }
 
 .flex-horizontal
@@ -85,10 +90,13 @@ div
 
 ul.flex-horizontal
 {
+    display: flex;
     list-style-type: none;
     height: 100%;
     overflow: hidden;
     top: 0;
+/*    justify-content: var(--nav-style);*/
+    justify-content: center;
 }
 
 ul.flex-horizontal li
