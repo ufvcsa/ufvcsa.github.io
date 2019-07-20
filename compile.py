@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 import glob, os
 
+def getfiles():
+    l = glob.glob('*.ht')
+    l.extend(glob.glob('documents/*.ht'))
+    return l
+
 def templater():
     with open('template.html', 'r') as file:
         template = file.read()
-    for file in glob.glob('*.ht'):
+    for file in getfiles():
         out = file.rstrip('ht')[0:-1] + '.html'
         with open(out, 'w') as outfile:
             with open(file, 'r') as infile:
