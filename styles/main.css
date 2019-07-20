@@ -30,6 +30,9 @@ div
     margin-right: var(--site-right);
     height: var(--header-height);
     overflow: hidden;
+    padding: 0;
+    padding-top: var(--nav-height);
+    width: var(--site-width);
 }
 
 #header #header-image
@@ -42,6 +45,7 @@ div
     margin-top: -110px;
     width: 100%;
     max-width: 100%;
+    overflow: visible;
 }
 
 #main-nav
@@ -50,7 +54,8 @@ div
     margin-right: var(--site-right);
     height: var(--nav-height);
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
+    width: var(--site-width);
 }
 
 .article-wrapper
