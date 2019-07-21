@@ -113,3 +113,8 @@ ul.flex-horizontal li
     line-height: var(--nav-height);
     text-align: center;
 }
+
+p
+{
+    margin-bottom: 9px;
+}
