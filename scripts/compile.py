@@ -2,8 +2,8 @@
 import glob, os
 
 def getfiles():
-    l = glob.glob('*.ht')
-    l.extend(glob.glob('documents/*.ht'))
+    l = glob.glob('src/*.ht')
+    l.extend(glob.glob('src/documents/*.ht'))
     return l
 
 def templater():
