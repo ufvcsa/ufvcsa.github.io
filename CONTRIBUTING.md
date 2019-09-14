@@ -12,3 +12,9 @@ If you aren't familiar with the process of creating a pull request for a reposit
 4. When you've finished your changes, push them to your fork on GitHub: `git push -u origin HEAD` (This will create a remote branch with the same name as your local one)
 5. From the GitHub web client, make a new pull request by visiting your local fork of the repository and selecting 'New Pull Request', then on the right side select your new branch under 'compare'. 
 6. Make a description of the pull request that states the changes you have made and ideally a reference to the original issue.
+
+## Development Process
+
+The website setup is currently extremely simple. There are scripts in `scripts/` that enable compiling the `.ht` files in `src/` to `html`. **If you are making changes to the HTML content of a page, make the changes to the .ht version.** The directory structure is mirrored, so if you want to change `documents/constitution.html`, make your change in `src/documents/constitution.ht`. Afterwards, run `scripts/compile.py` and check to make sure that `documents/constitution.html` contains the changes you wanted.
+
+If you like, you can use `scripts/compile-commit-clean.sh` to commit changes, which will remove all `html` files after committing them. Sourcing `scripts/env.sh` will make it so that `s` is an alias to a `git status` that does not show changes to `html` files.
