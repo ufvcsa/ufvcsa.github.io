@@ -7,8 +7,9 @@ def getfiles():
     return l
 
 def templater():
-    with open('template', 'r') as file:
-        template = file.read()
+    with open('banner', 'r') as bf:
+        with open('template', 'r') as file:
+            template = file.read().replace('[[BANNER]]', bf.read())
     for file in getfiles():
         out = file.rstrip('ht')[0:-1].lstrip('src')[1:] + '.html'
         with open(out, 'w') as outfile:

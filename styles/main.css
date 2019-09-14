@@ -68,6 +68,26 @@ div
     margin-right: var(--site-right);
 }
 
+#banner
+{
+    /* See fonts.css for article font configuration */
+
+    box-sizing: border-box;
+
+    margin-left: var(--site-left);
+    margin-right: var(--site-right);
+
+    margin-top: 0px;
+
+    padding: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    background-color: #D3D3D3;
+
+    height: auto;
+}
+
 .article
 {
     /* See fonts.css for article font configuration */
