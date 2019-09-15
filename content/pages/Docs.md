@@ -1,0 +1,4 @@
+---
+name: 'Docs'
+template: 'genericPage'
+---

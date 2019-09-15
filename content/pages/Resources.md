@@ -1,0 +1,4 @@
+---
+name: 'Resources'
+template: 'genericPage'
+---
