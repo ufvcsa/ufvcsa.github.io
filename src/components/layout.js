@@ -7,10 +7,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
-import Header from './header';
-import './layout.css';
 import '../styles/reset.css';
 import '../styles/colours.css';
 import '../styles/fonts.css';
@@ -30,21 +28,30 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+      <nav className="flex-horizontal" id="main-nav">
+        <ul className="flex-horizontal simple-links">
+          <Link to="/">
+            <li>Home</li>
+          </Link>
+          <Link to="/about">
+            <li>About</li>
+          </Link>
+          <Link to="/events">
+            <li>Events</li>
+          </Link>
+          <Link to="/resources">
+            <li>Resources</li>
+          </Link>
+          <Link to="/docs">
+            <li>Documents</li>
+          </Link>
+          <Link to="/contact">
+            <li>Contact</li>
+          </Link>
+        </ul>
+      </nav>
+      <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
     </>
   );
