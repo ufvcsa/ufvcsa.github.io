@@ -14,6 +14,7 @@ import '../styles/colours.css';
 import '../styles/fonts.css';
 import '../styles/main.css';
 import '../styles/scaling.css';
+import Header from './header';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,31 +29,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <nav className="flex-horizontal" id="main-nav">
-        <ul className="flex-horizontal simple-links">
-          <Link to="/">
-            <li>Home</li>
-          </Link>
-          <Link to="/about">
-            <li>About</li>
-          </Link>
-          <Link to="/events">
-            <li>Events</li>
-          </Link>
-          <Link to="/resources">
-            <li>Resources</li>
-          </Link>
-          <Link to="/docs">
-            <li>Documents</li>
-          </Link>
-          <Link to="/contact">
-            <li>Contact</li>
-          </Link>
-        </ul>
-      </nav>
-      <div>
-        <main>{children}</main>
+      <Header />
+      <div className="flex-horizontal" id="header">
+        <div className="img" id="header-image">
+          <img src="/images/csaheader.png" />
+        </div>
       </div>
+      <div className="article">{children}</div>
     </>
   );
 };
