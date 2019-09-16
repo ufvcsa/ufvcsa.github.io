@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "ufv-csa",
+  "private": false,
+  "description": "A website for the UFV Computer Science Association",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "UFV Computer Science Association <@ufvcsa>",
   "dependencies": {
     "gatsby": "^2.15.15",
     "gatsby-image": "^2.2.19",
@@ -35,9 +35,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ufvcsa/ufvcsa.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ufvcsa/ufvcsa.github.io/issues"
   }
 }
