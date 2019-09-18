@@ -1,9 +1,8 @@
 ---
-name: 'Resources'
+title: 'Resources'
 template: 'genericPage'
+path: '/resources'
 ---
-
-# Resources
 
 ## Raspberry Pis
 

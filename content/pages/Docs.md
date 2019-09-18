@@ -1,8 +1,7 @@
 ---
-name: 'Docs'
+title: 'Docs'
 template: 'genericPage'
+path: '/docs'
 ---
-
-# Docs
 
 This page lists documents related to the CSA

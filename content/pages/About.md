@@ -1,9 +1,8 @@
 ---
-name: 'About'
+title: 'About'
 template: 'genericPage'
+path: '/about'
 ---
-
-# About
 
 The Computing Student Association has been around since 2006, though it used to be formerly known as the UFV Computer Information Systems Student Association (CISSA). The CSA represents the students in the Computing Information Systems program at the [University of the Fraser Valley](https://ufv.ca) to staff and faculty. The CSA is based in the the Student Computing Center in D Building, where students can stop by, both to do computer-related homework, and to ask for tutoring assistance on various CIS or CS related topics.
 

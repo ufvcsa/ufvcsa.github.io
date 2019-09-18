@@ -1,9 +1,8 @@
 ---
-name: 'Contact'
+title: 'Contact'
 template: 'genericPage'
+path: '/contact'
 ---
-
-# Contact
 
 Student Computing Center: UFV Abbotsford campus, room D224
 

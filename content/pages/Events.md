@@ -1,9 +1,8 @@
 ---
-name: 'Events'
+title: 'Events'
 template: 'genericPage'
+path: '/events'
 ---
-
-# Events
 
 ## Games Days
 

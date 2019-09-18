@@ -1,6 +1,7 @@
 ---
-name: 'Home'
+title: 'Home'
 template: 'genericPage'
+path: '/'
 ---
 
 # UFV Computing Student Association
