@@ -4,7 +4,9 @@ import { graphql } from 'gatsby';
 import Layout from '../layout';
 import SEO from '../seo';
 
-const genericPage = ({ data }) => {
+const genericPage = ({
+  data /* passed in by gatsby-node.js in the build step */,
+}) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 

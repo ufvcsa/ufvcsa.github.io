@@ -7,28 +7,18 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+
+import Header from './header';
 
 import '../styles/reset.css';
 import '../styles/colours.css';
 import '../styles/fonts.css';
 import '../styles/main.css';
 import '../styles/scaling.css';
-import Header from './header';
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   return (
-    <>
+    <main>
       <Header />
       <div className="flex-horizontal" id="header">
         <div className="img" id="header-image">
@@ -36,7 +26,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <div className="article">{children}</div>
-    </>
+    </main>
   );
 };
 
