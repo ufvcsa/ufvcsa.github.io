@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 const Header = () => (
-  <>
+  <header>
     <nav className="flex-horizontal" id="main-nav">
       <ul className="flex-horizontal simple-links">
         <Link to="/">
@@ -25,7 +25,7 @@ const Header = () => (
         </Link>
       </ul>
     </nav>
-  </>
+  </header>
 );
 
 export default Header;

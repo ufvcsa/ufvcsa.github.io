@@ -18,15 +18,15 @@ import '../styles/scaling.css';
 
 const Layout = ({ children }) => {
   return (
-    <main>
+    <div>
       <Header />
       <div className="flex-horizontal" id="header">
         <div className="img" id="header-image">
           <img src="/images/csaheader.png" alt="CSA Header" />
         </div>
       </div>
-      <div className="article">{children}</div>
-    </main>
+      <main>{children}</main>
+    </div>
   );
 };
 

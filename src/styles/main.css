@@ -79,9 +79,8 @@ div {
   height: auto;
 }
 
-.article {
-  /* See fonts.css for article font configuration */
-
+main {
+  max-width: 100%;
   box-sizing: border-box;
 
   margin-left: var(--site-left);
@@ -94,7 +93,6 @@ div {
   padding-right: 32px;
 
   background-color: #d3d3d3;
-
   height: auto;
 }
 
