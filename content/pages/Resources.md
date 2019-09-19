@@ -36,8 +36,20 @@ To have a model printed, please fill out and print the form below and submit it 
 
 ### Print Gallery
 
-![Snorlax](http://web.archive.org/web/20180812124042im_/http://ufvcsa.ca/wp-content/uploads/2017/03/20170328_140145-e1490736320246.jpg)![Linked rings](http://web.archive.org/web/20180812124042im_/http://ufvcsa.ca/wp-content/uploads/2017/03/20170328_140301-e1490736307260.jpg)![Glow-in-the-dark robot](http://web.archive.org/web/20180812124042im_/http://ufvcsa.ca/wp-content/uploads/2017/03/20170328_140427-e1490736276101.jpg)
+<div style="display: flex; width: 100%;"> 
+<img src="/images/print1.jpg"
+     alt="Snorlax 3D print"
+     style="max-width: 400px; max-height: 400px; margin: 5px;" />
 
+<img src="/images/print2.jpg"
+     alt="Linked rings"
+     style="max-width: 400px; max-height: 400px; margin: 5px;" />
+
+<img src="/images/print3.jpg"
+     alt="Glow-in-the-dark robot"
+     style="max-width: 400px; max-height: 400px; margin: 5px;" />
+
+</div>
 ### Certifications
 
 Certification can be a good way to show employers your abilities, but beware: many certifications are not recognized industry-wide or are not highly-regarded.
