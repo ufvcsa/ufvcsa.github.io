@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `UFV Computer Science Association`,
-    description: `The UFV computer science association's website built through open source by the CSA!`,
+    title: `UFV Computing Students Association`,
+    description: `The UFV Computing Students Association's website built through open source by the CSA!`,
     author: `@ufvcsa`,
   },
   plugins: [
