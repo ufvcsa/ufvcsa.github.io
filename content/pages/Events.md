@@ -24,6 +24,5 @@ Members of the CSA gather every Friday night in our Discord, however there’s a
 
 Here is a list of events that the CSA has run, or participated in in the past:
 
-- [Child’s Play Charity Fundraiser](http://web.archive.org/web/20180812130528/http://ufvcsa.ca/childs-play-charity-fundraiser/)
-- [Quantum Computing Lecture](http://web.archive.org/web/20180812130528/http://ufvcsa.ca/quantum-computing-lecture/)
-- [Chilliwack Tech /Next](http://web.archive.org/web/20180812130528/http://ufvcsa.ca/chilliwack-tech-next/)
+- [Quantum Computing Lecture](/events/quantam-computing-lecture)
+- [Chilliwack Tech /Next](/events/chilliwack-tech-next)

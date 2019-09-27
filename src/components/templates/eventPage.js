@@ -1,12 +1,13 @@
-import React from 'react';
+import React from 'react'
 import { graphql } from 'gatsby';
 
 import Layout from '../layout';
 import SEO from '../seo';
 
-const genericPage = ({
-  data /* passed in by gatsby-node.js in the build step */,
-}) => {
+const eventPage = ({data}) => {
+
+  console.log("on the page!")
+
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
@@ -15,32 +16,31 @@ const genericPage = ({
       <article>
         <SEO title={frontmatter.title} />
         <h1>{frontmatter.title}</h1>
+        <p className="eventPage-date"><i>{new Date(frontmatter.date).toDateString()}</i></p>
+        <p className="eventPage-location"><i>{frontmatter.location}</i></p>
         <section
           className="page-heading"
           dangerouslySetInnerHTML={{ __html: html }}
         ></section>
       </article>
     </Layout>
-  );
-};
+  )
+}
 
-export default genericPage;
+export default eventPage;
 
-/*The Query below is read by gatsby-node in the build step
- *See the documentation below for a quick overview:
- *
- *https://www.gatsbyjs.org/docs/adding-markdown-pages/
- */
 export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(
-      frontmatter: { path: { eq: $slug }, template: { eq: "genericPage" } }
+      frontmatter: { path: { eq: $slug }, template: {eq: "eventPage"} }
     ) {
-      html
       frontmatter {
         path
         title
+        date
+        location
       }
+      html
     }
   }
-`;
+`

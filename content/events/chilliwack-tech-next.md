@@ -1,0 +1,13 @@
+---
+path: 'chilliwack-tech-next'
+template: 'eventPage'
+title: 'Chilliwack.Tech /Next'
+date: '2018-11-18'
+location: 'UFV Chilliwack Campus'
+---
+
+The Chilliwack.Tech/Next event is the ideal place for high school and university students to get hands-on introductions to the fastest growing hi-tech fields. Participants will also learn more about local tech companies, startups, and the business side of the industry. This action-packed afternoon will take place in Chilliwack on November 18th, from 1pm to 6pm. Registration is only $10._
+
+Run by the Chilliwack.Tech (part of the Chilliwack Innovation Network) in partnership with the Computing Student Association, this event features 3 50-minute hands-on learning sessions, and a series of 7 smaller “lightning talks”. With snacks and drinks provided, this 5 hour event offers a great opportunity for students to meet some of the local industry members and potentially meet partners for Chilliwack.Tech’s upcoming annual Hackathon.
+
+To purchase your tickets or learn more about the event, visit the event page at [https://chilliwack.tech/next](https://chilliwack.tech/next)
