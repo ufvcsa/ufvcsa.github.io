@@ -1,0 +1,17 @@
+---
+title: 'About'
+template: 'genericPage'
+path: '/about'
+---
+
+The Computing Student Association has been around since 2006, though it used to be formerly known as the UFV Computer Information Systems Student Association (CISSA). The CSA represents the students in the Computing Information Systems program at the [University of the Fraser Valley](https://ufv.ca) to staff and faculty. The CSA is based in the the Student Computing Center in D Building, where students can stop by, both to do computer-related homework, and to ask for tutoring assistance on various CIS or CS related topics.
+
+The CSA runs an annual campus fundraiser called the UFV Child’s Play Game-A-Thon. Now one of the larger events on campus, this event alone has raised almost \$10,000 total since it started. Proceeds are donated to Child’s Play Charity, who can be found at [childsplaycharity.org](https://childsplaycharity.org/). This event has been growing larger each year, in 2015 we ran the event in the great hall in the SUB with much success.
+
+The CSA has also been known to collaborate on campus with several other associations to run large campus-wide events. We participate in SUS events, and have collaborated with the BCSA and PSA for both the Casino Royale and Big Bang Event on campus.
+
+The goal CSA is to fully provide a fun and enjoyable environment for students on campus, to help build a community of like-minded students from all disciplines in the CIS world.
+
+# Executives
+
+The President, Vice President, Finance Officer, Secretary, and Projects Manager positions will be up for election this coming year.
