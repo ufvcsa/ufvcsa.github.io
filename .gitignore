@@ -1,3 +1,6 @@
+# Intentionally ignored files
+*.ignore
+
 # Logs
 logs
 *.log
