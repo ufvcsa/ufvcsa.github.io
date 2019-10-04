@@ -13,7 +13,6 @@ This repository has a few key goals:
    - Team Communication: How to effectively work with others on a real-world project.
    - Git / Github Workflows: How to manage code-bases using git / github
    - Realworld Web Technologies: How to work with modern web technologies like Gatsby.js, React, and Node.
-3. Add more goals / re-arrange
 
 ## Contributing
 
@@ -30,39 +29,53 @@ We've tried to design this repository to be as accessible to all as possible. Wh
 
 ### Getting Started
 
-_If you're completely new to open source and github, we would reccomend checking out [this quick beginners guide]() so you can get some background_
+_If you're completely new to open source and github, we would reccomend checking out [this quick beginners guide](https://guides.github.com/activities/hello-world/) so you can get some background_
 
-Depending on how you want to contribute, there are a few quick things you'll have to do before getting started!
+Depending on how you want to contribute, there are a few quick things you'll have to do before getting started: 
 
-#### Work on an existing issue
 
-1. Check out the issues page
-2. Find an issue you'd like to work on and comment on it, one of the repo's admin's will let you know if the issue is open and assign it to you!
+#### Working on existing issues
+1. Check out the issues page. 
+2. Find an issue you'd like to work on and comment on it, one of the repo's core maintainer's will let you know if the issue is open and assign it to you!
    - If this is your first time contributing, try checking out the issues marked "good first issue" as their reserved for people's first Pull Requests!
-3. See the contribution guidelines found [here](LINK-TO-CONTRIBUTING.md)
+3. See the contribution guidelines found [here](./CONTRIBUTING.md)
+4. set up your environment using [our guide](###setting-up-your-environment) and have fun!
 
-#### Add new content to the site
-
-1. See the contribution guidelines found [here](LINK-TO-CONTRIBUTING.md)
-2. Create an issue based on the rules in our guidelines and await approval from one of the repo's admins
-3. Once approved, fork the repo and see our guide on [setting up your environment]()
-
-#### Update the sites styling
-
-<!-- TODO -->
-
-#### Add new features or change the design
-
-<!-- TODO -->
+#### Submitting new issues
+1. Check if an issue already exists for what you're looking to do on our issues page.
+2. See the contribution guidelines found [here](./CONTRIBUTING.md)
+3. Create an issue following our guidelines and wait for approval from one of the repo's core maintainers.
+4. Upon approval, set up your environment using [our guide](###setting-up-your-environment) and have fun!
 
 ### Setting up your environment
 
-<!-- TODO -->
+#### Things To Install
+If you're looking to contribute to the repo, there are a few things you'll need have installed:
 
-- Notes on installing prettier in your editor of choice, explain what prettier is.
-- Create documents on prefered commit size
-- Link off to some github desktop GUI's for beginners (github deskop, gitkraken, etc)
+1. [**Node.js**](https://nodejs.org/en/): Node.js is a javascript runtime that allows you to write aavascript that runs directly on your machine through the Node runtime (as opposed to in a browser). 
+2. [**NPM**](https://www.npmjs.com/): NPM (Node Package Manager) is a package manager for node and is used to handle dependencies for node based projects. It is usually included in Node.js
+3. [**Prettier**](https://prettier.io/): Prettier is a code formatter plugin that we use to standardize our code styling. Prettier integrates with your IDE and will automatically format your code to match this repos perfered style (see .prettierrc)
+4. [**Git**](https://git-scm.com/): As this is a git repository, you'll need the version control software git. If you're new to git, we'd recommend starting with a GUI like [Github Desktop](https://desktop.github.com/) or [Gitkraken](https://www.gitkraken.com/) to lessen the learning curve.
+5. **IDE**: Last, but not least, you'll need an editor to make changes to the source files in. Use whatever you like as long as it has a prettier plugin.
 
-## Code Of Conduct
+#### Local Development Setup
 
-<!-- TODO add a code of conduct -->
+To start working on the site on your local machine you'll need to:
+
+1. Fork this repo (click the "fork" button at the top right hand side of the screen)
+2. Clone your forked repo to your local machine using git cli or one of the git gui's we recommended
+3. Navigate into the repo's folder in your shell of choice and run the command `npm install`. This will look at the package.json file and install all the necessary dependencies. 
+4. Run the command `npm run start` once everything is installed. This will boot up a local development server that will live update as you make changes to the code.
+5. Add your content, build your feature, fix your bug, and make a pull request!
+
+#### Getting Started with Gatsby (What this site is built on)
+
+This website is built using [Gatsby.js](https://www.gatsbyjs.org/)
+
+Gatsby is a Static Site Generator; In our case this means it takes a bunch of source files, content files, and config files and compiles, minifies, and packages them together as a set of highly optimized HTML, CSS, and JS files that we can host as the website.
+
+This allows us to develop with modern tools like React (what gatsby uses for UI), GraphQL (what gatsby uses for querying data), and markdown files with no large performance hit to the site. 
+
+We'd highly recommend [their beginner friendly tutorial](https://www.gatsbyjs.org/tutorial/) as gatsby can be a lot to jump into without context
+
+**If you have any questions or get lost along the way feel free to make an issue asking for help!**
