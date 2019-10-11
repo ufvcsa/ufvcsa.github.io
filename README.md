@@ -69,14 +69,5 @@ If you're looking to contribute to the repo, there are a few things you'll need 
 4. [**Git**](https://git-scm.com/): As this is a git repository, you'll need the version control software git. If you're new to git, we'd recommend starting with a GUI like [Github Desktop](https://desktop.github.com/) or [Gitkraken](https://www.gitkraken.com/) to lessen the learning curve.
 5. **IDE**: Last, but not least, you'll need an editor to make changes to the source files in. Use whatever you like as long as it has a prettier plugin.
 
-#### Local Development Setup
-
-To start working on the site on your local machine you'll need to:
-
-1. Fork this repo (click the "fork" button at the top right-hand side of the screen)
-2. Clone your forked repo to your local machine using git CLI or one of the git gui's we recommended
-3. Navigate into the repo's folder in your shell of choice and run the command `npm install`. This will look at the package.json file and install all the necessary dependencies. 
-4. Run the command `npm run start` once everything is installed. This will boot up a local development server that will live update as you make changes to the code.
-5. Add your content, build your feature, fix your bug, and make a pull request!
-
+For more info on developing locally, see [CONTRIBUTING.md](./CONTRIBUTING.md)
 
