@@ -15,6 +15,17 @@ If you aren't familiar with the process of creating a pull request for a reposit
 
 ## Development Process
 
-The website setup is currently extremely simple. There are scripts in `scripts/` that enable compiling the `.ht` files in `src/` to `html`. **If you are making changes to the HTML content of a page, make the changes to the .ht version.** The directory structure is mirrored, so if you want to change `documents/constitution.html`, make your change in `src/documents/constitution.ht`. Afterwards, run `scripts/compile.py` and check to make sure that `documents/constitution.html` contains the changes you wanted.
+**We'd highly recommend [Gatsby's beginner-friendly tutorial](https://www.gatsbyjs.org/tutorial/) as Gatsby can be a lot to jump into without context**. The tutorial is aimed towards web-dev beginners so don't be afraid to give it a shot no-matter your experience!
 
-If you like, you can use `scripts/compile-commit-clean.sh` to commit changes, which will remove all `html` files after committing them. Sourcing `scripts/env.sh` will make it so that `s` is an alias to a `git status` that does not show changes to `html` files.
+### Developing Locally
+*Before trying to develop locally, make sure you've installed all the required software [that we list in our README.md](./README.md#####Things-To-Install)*
+
+To start working on the site on your local machine you'll need to:
+
+1. Navigate into the repo's folder in your shell of choice and run the command `npm install`. This will look at the package.json file and install all the necessary dependencies. 
+2. Run the command `npm run start` once everything is installed. This will boot up a local development server that will live update as you make changes to the code.
+3. *optional step* open up [Gatsby's documentation site](https://www.gatsbyjs.org/docs/) or [their tutorial](https://www.gatsbyjs.org/tutorial/) if you're just getting started!
+3. Add your content, build your feature, fix your bug, and make a pull request! 
+
+
+
