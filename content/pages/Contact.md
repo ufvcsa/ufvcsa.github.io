@@ -10,11 +10,7 @@ Facebook: [UFV Computing Student Association](https://www.facebook.com/UFV.CISSA
 
 Email: [cissa.ufv@gmail.com](mailto:cissa.ufv@gmail.com)
 
-President: Cody Beaty
-
-Email Address: [Cody.Beaty@student.ufv.ca](mailto:Cody.Beaty@student.ufv.ca)
-
-Representative: Michael Bennett
+President: Michael Bennett
 
 Email Address: [Michael.Bennett1@student.ufv.ca](mailto:Michael.Bennett1@student.ufv.ca)
 
