@@ -16,7 +16,7 @@ Email Address: [Michael.Bennett1@student.ufv.ca](mailto:Michael.Bennett1@student
 
 ## Discord
 
-The CSA's Discord server is available for both students seeking assistance with courses and those who just want to chat or play games.
+The CSA's Discord server is available for both students seeking assistance with courses and those who just want to chat or play games. ([Permanent invite link](https://discord.gg/nu4kTTR))
 
 <iframe src="https://discordapp.com/widget?id=287455376994205716&amp;theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 

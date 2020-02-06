@@ -1,3 +1,6 @@
+# Miscellaneous
+*.ignore
+
 # Logs
 logs
 *.log
