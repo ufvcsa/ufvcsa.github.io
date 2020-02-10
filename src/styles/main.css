@@ -8,7 +8,7 @@
   --header-height: 200px;
 
   /* Navbar - Dimensions */
-  --nav-height: 80px;
+  --nav-height: 48px;
   --nav-spacing: 42px;
 
   /* Navbar - Button Style */
@@ -27,6 +27,7 @@ div {
   height: var(--header-height);
   overflow: hidden;
   padding: 0;
+  padding-top: var(--nav-height);
   width: var(--site-width);
 }
 
@@ -50,7 +51,7 @@ div {
   margin-right: var(--site-right);
   height: var(--nav-height);
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   width: var(--site-width);
 }
 
