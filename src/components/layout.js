@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 
 import Header from './header';
 
+import '../styles/reset.css';
 import '../styles/colours.css';
 import '../styles/fonts.css';
 import '../styles/main.css';
