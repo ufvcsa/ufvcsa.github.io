@@ -131,6 +131,14 @@ p {
   height: 36px;
 }
 
+.img-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
