@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       <Header />
       <div className="flex-horizontal" id="header">
         <div className="img" id="header-image">
-          <img src="/images/csaheader.png" alt="CSA Header" />
+          <img src="/images/csaheader.jpg" alt="CSA Header" />
         </div>
       </div>
       <main>{children}</main>
