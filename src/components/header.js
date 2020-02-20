@@ -4,7 +4,14 @@ import React from 'react';
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = window.innerWidth < 1024 ? { showNav: false } : { showNav: true };
+    this.state = {
+      showNav:
+        typeof window !== `undefined`
+          ? window.innerWidth < 1024
+            ? false
+            : true
+          : true,
+    };
     this.toggleNav = this.toggleNav.bind(this);
   }
 
