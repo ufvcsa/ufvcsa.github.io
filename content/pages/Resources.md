@@ -36,7 +36,7 @@ To have a model printed, please fill out and print the form below and submit it 
 
 ### Print Gallery
 
-<div style="display: flex; width: 100%;"> 
+<div class="img-group"> 
 <img src="/images/print1.jpg"
      alt="Snorlax 3D print"
      style="max-width: 400px; max-height: 400px; margin: 5px;" />

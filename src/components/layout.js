@@ -15,14 +15,15 @@ import '../styles/colours.css';
 import '../styles/fonts.css';
 import '../styles/main.css';
 import '../styles/scaling.css';
+import '../styles/keyframes.css';
 
 const Layout = ({ children }) => {
   return (
     <div>
       <Header />
       <div className="flex-horizontal" id="header">
-        <div className="img" id="header-image">
-          <img src="/images/csaheader.png" alt="CSA Header" />
+        <div className="header-background">
+          <img className="header-logo" src="/images/csalogo.png" alt="CSA Header" />
         </div>
       </div>
       <main>{children}</main>
