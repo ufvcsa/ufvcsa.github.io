@@ -4,15 +4,31 @@ import React from 'react';
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      showNav:
-        typeof window !== `undefined`
-          ? window.innerWidth < 1024
-            ? false
-            : true
-          : true,
-    };
+
+    // Just defining here
+    // Will always be set by setShowNav() when component mounts
+    this.state = { showNav: undefined };
+
     this.toggleNav = this.toggleNav.bind(this);
+  }
+
+  componentDidMount() {
+    // Can only set the showNav state once the component has mounted
+    this.setShowNav();
+    window.addEventListener('resize', this.setShowNav.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.setShowNav.bind(this));
+  }
+
+  /**
+   * Set the show nav state.
+   */
+  setShowNav() {
+    this.setState({
+      showNav: window.innerWidth < 1024 ? false : true,
+    });
   }
 
   toggleNav() {
