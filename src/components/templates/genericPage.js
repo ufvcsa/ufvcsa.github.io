@@ -5,7 +5,7 @@ import Layout from '../layout';
 import SEO from '../seo';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
-import MinutesList from '../MinutesList';
+import MinutesList from '../mdxUtils/MinutesList';
 
 const genericPage = ({
   data /* passed in by gatsby-node.js in the build step */,

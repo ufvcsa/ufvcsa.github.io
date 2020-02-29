@@ -4,10 +4,14 @@ import { graphql } from 'gatsby';
 import Layout from '../layout';
 import SEO from '../seo';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MDXProvider } from '@mdx-js/react';
+import MinutesList from '../mdxUtils/MinutesList';
 
 const eventPage = ({ data }) => {
   const { mdx } = data;
   const { frontmatter, body } = mdx;
+
+  const shortcodes = { MinutesList };
 
   return (
     <Layout>
@@ -21,7 +25,9 @@ const eventPage = ({ data }) => {
           <i>{frontmatter.location}</i>
         </p>
         <section className="page-heading">
-          <MDXRenderer>{body}</MDXRenderer>
+          <MDXProvider components={shortcodes}>
+            <MDXRenderer>{body}</MDXRenderer>
+          </MDXProvider>
         </section>
       </article>
     </Layout>
