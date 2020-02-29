@@ -4,6 +4,8 @@ import { graphql } from 'gatsby';
 import Layout from '../layout';
 import SEO from '../seo';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MDXProvider } from '@mdx-js/react';
+import MinutesList from '../MinutesList';
 
 const genericPage = ({
   data /* passed in by gatsby-node.js in the build step */,
@@ -11,13 +13,17 @@ const genericPage = ({
   const { mdx } = data;
   const { frontmatter, body } = mdx;
 
+  const shortcodes = { MinutesList };
+
   return (
     <Layout>
       <article>
         <SEO title={frontmatter.title} />
         <h1>{frontmatter.title}</h1>
         <section className="page-heading">
-          <MDXRenderer>{body}</MDXRenderer>
+          <MDXProvider components={shortcodes}>
+            <MDXRenderer>{body}</MDXRenderer>
+          </MDXProvider>
         </section>
       </article>
     </Layout>
