@@ -13,6 +13,7 @@ const genericPage = ({
   const { mdx } = data;
   const { frontmatter, body } = mdx;
 
+  // List of globally available components in mdx files
   const shortcodes = { MinutesList };
 
   return (

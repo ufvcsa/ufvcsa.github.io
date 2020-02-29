@@ -2,6 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
 const MinutesList = () => {
+  // Get data
   const data = useStaticQuery(graphql`
     query minutesQuery {
       allMdx(filter: { frontmatter: { path: { regex: "/minutes//" } } }) {
@@ -18,17 +19,18 @@ const MinutesList = () => {
     }
   `);
 
-  const { allMdx } = data;
-  const { edges } = allMdx;
+  const edges = data.allMdx.edges;
 
   return (
-    <ul>
+    <ul className="minutesList">
       {edges.map(nodeWrapper => {
-        const { node } = nodeWrapper;
-        const { frontmatter } = node;
+        const frontmatter = nodeWrapper.node.frontmatter;
         const { title, path, date } = frontmatter;
+        const time = new Date(date);
+        time.setHours(24);
         return (
           <li key={path}>
+            <p>Occured on {time.toDateString()}</p>
             <Link to={path}>{title}</Link>
           </li>
         );
