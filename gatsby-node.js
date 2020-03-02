@@ -12,12 +12,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     {
-      allMarkdownRemark(limit: 100) {
+      allMdx {
         edges {
           node {
             frontmatter {
-              path
+              date
               template
+              path
             }
           }
         }
@@ -30,24 +31,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    if(node.frontmatter.template == "genericPage"){
+  result.data.allMdx.edges.forEach(({ node }) => {
+    if (node.frontmatter.template == 'genericPage') {
       createPage({
         path: node.frontmatter.path,
         component: genericPage,
         context: {
-          slug: node.frontmatter.path //used as the primary key to query for the page (see genericPage.js)
+          slug: node.frontmatter.path, //used as the primary key to query for the page (see genericPage.js)
         },
       });
-    }
-    else if(node.frontmatter.template == "eventPage"){
+    } else if (node.frontmatter.template == 'eventPage') {
       createPage({
         path: `/events/${node.frontmatter.path}`,
         component: eventPage,
         context: {
-          slug: node.frontmatter.path //used as the primary key to query for the page (see eventPage.js)
-        }
-      })
+          slug: node.frontmatter.path, //used as the primary key to query for the page (see eventPage.js)
+        },
+      });
     }
   });
 };

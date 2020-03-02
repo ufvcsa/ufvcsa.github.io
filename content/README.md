@@ -13,7 +13,10 @@ By separating our content from the rest of the site, we can develop the site usi
 
 The content folder contains a folder for each _type_ of page on the site. Each type (aka `template`) correlates to a template file in `/src/components/templates`.
 
-These folders contain markdown (.md) files; each markdown file correlates to a page on the site.
+These folders contain markdown (`.mdx`) files; each markdownx file correlates to a page on the site.
+
+mardownx (or `.mdx`) files work exactly like normal markdown files; they follow the exact same syntax. However, with mdx users can also utilize JSX and Javascript! This allows us to do things like use React components in markdown (which allows for dynamic content and user interaction).
+You can [learn more about it here](https://www.gatsbyjs.org/docs/mdx/).
 
 ### Folders
 

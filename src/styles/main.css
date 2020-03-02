@@ -35,7 +35,7 @@ div {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url("/images/csaheader.jpg");
+  background-image: url('/images/csaheader.jpg');
   max-height: 400px;
   padding: 50px 0;
 }
@@ -139,4 +139,25 @@ p {
   justify-content: center;
   padding: 10px;
   width: 100%;
+}
+
+/* CSS for MinutesList */
+
+ul.minutesList {
+  display: grid;
+  margin: 0px;
+  list-style: none;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 2em;
+}
+
+ul.minutesList > li::before {
+  content: '';
+}
+
+ul.minutesList > li > p {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #777777;
+  margin-bottom: 0.2em;
 }
