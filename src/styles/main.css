@@ -221,4 +221,8 @@ p,
   .genericPage ol li {
     font-size: 0.875em;
   }
+
+  .header-logo {
+    width: 300px;
+  }
 }
