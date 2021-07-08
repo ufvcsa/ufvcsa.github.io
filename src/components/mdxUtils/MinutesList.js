@@ -5,7 +5,10 @@ const MinutesList = () => {
   // Get data
   const data = useStaticQuery(graphql`
     query minutesQuery {
-      allMdx(filter: { frontmatter: { path: { regex: "/minutes//" } } }) {
+      allMdx(
+        filter: { frontmatter: { path: { regex: "/minutes//" } } }
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
         edges {
           node {
             frontmatter {

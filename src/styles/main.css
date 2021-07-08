@@ -17,7 +17,9 @@
 }
 
 body {
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 div {
@@ -88,8 +90,6 @@ main {
   padding-right: 32px;
 
   background-color: #d3d3d3;
-
-  animation: slide-in 500ms ease-in;
 }
 
 #main-nav li {
@@ -116,10 +116,6 @@ ul.flex-horizontal li {
   height: var(--nav-height);
   line-height: var(--nav-height);
   text-align: center;
-}
-
-p {
-  margin-bottom: 9px;
 }
 
 .nav-collapse {
@@ -160,4 +156,69 @@ ul.minutesList > li > p {
   font-size: 0.8em;
   color: #777777;
   margin-bottom: 0.2em;
+}
+
+/* IMPROVED FONTS FOR PAGES */
+
+.genericPage .page__content :is(h1, h2, h3, h4, p, ul, ol, li),
+.genericPage .page__title :is(h1, h2, h3, h4, p, ul, ol, li) {
+  line-height: normal;
+  height: auto;
+}
+
+.genericPage .page__content :is(h1, h2, h3),
+.genericPage .page__title :is(h1, h2, h3) {
+  margin-bottom: 0.75em;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin: 1em 0px;
+}
+
+h2 {
+  font-size: 1.66em;
+  margin: 1em 0px;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin: 1em 0px;
+}
+
+.genericPage ol > li {
+  margin-bottom: 0.5em;
+}
+
+p,
+.genericPage ul li,
+.genericPage ol li {
+  margin-bottom: 1.14em;
+  font-size: 1.125em;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.66em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  main {
+    margin: 12px;
+    padding: 12px;
+  }
+
+  p,
+  .genericPage ul li,
+  .genericPage ol li {
+    font-size: 0.875em;
+  }
 }

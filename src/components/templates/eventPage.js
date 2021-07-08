@@ -16,8 +16,9 @@ const eventPage = ({ data }) => {
   return (
     <Layout>
       <article>
-        <SEO title={frontmatter.title} />
+        <SEO title={`UFV CSA: ${frontmatter.title}`} />
         <h1>{frontmatter.title}</h1>
+
         <p className="eventPage-date">
           <i>{new Date(frontmatter.date).toDateString()}</i>
         </p>
