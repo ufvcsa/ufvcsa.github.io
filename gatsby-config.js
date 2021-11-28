@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `UFV Computing Students Association`,
-    description: `The UFV Computing Students Association's website built through open source by the CSA!`,
+    title: `UFV Computing Student Association`,
+    description: `The UFV Computing Student Association's open source website built by the CSA!`,
     author: `@ufvcsa`,
   },
   plugins: [
@@ -46,11 +46,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `UFV Computer Science Association`,
+        name: `UFV Computing Student Association`,
         short_name: `ufvcsa`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#00703c`,
         display: `minimal-ui`,
         icon: `src/images/csaLogo_400x400.jpg`, // This path is relative to the root of the site.
         icons: [
