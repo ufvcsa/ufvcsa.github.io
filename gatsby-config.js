@@ -52,7 +52,7 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#00703c`,
         display: `minimal-ui`,
-        icon: `src/images/csaLogo_400x400.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/csalogo_500x500.png`, // This path is relative to the root of the site.
         icons: [
           {
             src: `/favicons/icon-144x144.png`,
