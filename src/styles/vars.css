@@ -1,0 +1,22 @@
+:root {
+  /* General - Dimensions */
+  --site-left: 10%;
+  --site-right: 10%;
+
+  /* Colours */
+  --primary: rgb(30, 30, 30);
+  --nav-highlight: #00703c;
+  --site-bg: #f8f8f8;
+
+  --footer-height: 60px;
+  --gap: 24px;
+  --content-gap: 20px;
+  --nav-width: 1024px;
+  --radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --gap: 14px;
+  }
+}

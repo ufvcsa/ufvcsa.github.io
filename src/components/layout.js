@@ -11,21 +11,16 @@ import PropTypes from 'prop-types';
 import Header from './header';
 
 import '../styles/reset.css';
-import '../styles/colours.css';
 import '../styles/fonts.css';
 import '../styles/main.css';
-import '../styles/scaling.css';
 import '../styles/keyframes.css';
+import '../styles/vars.css';
+import '../styles/header.css';
 
 const Layout = ({ children }) => {
   return (
     <div>
       <Header />
-      <div className="flex-horizontal" id="header">
-        <div className="header-background">
-          <img className="header-logo" src="/images/csalogo.png" alt="CSA Header" />
-        </div>
-      </div>
       <main>{children}</main>
     </div>
   );
