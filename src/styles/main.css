@@ -1,6 +1,6 @@
-html, body
-{
-    background-color: var(--site-bg);
+html,
+body {
+  background-color: var(--site-bg);
 }
 
 div {
@@ -12,32 +12,35 @@ ol {
   padding-inline-start: 40px;
 }
 
-.header-background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-height: 400px;
-  padding: 50px 0;
-}
-
-.header-logo {
-  width: 400px;
-  height: auto;
-}
-
 main {
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
+  margin: 20px auto;
+  padding: 0 15px;
+}
 
-  margin-left: var(--site-left);
-  margin-right: var(--site-right);
+@media screen and (min-width: 576px) {
+  main {
+    max-width: 540px;
+  }
+}
 
-  margin-top: 20px;
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 720px;
+  }
+}
 
-  padding: 20px;
-  padding-left: 32px;
-  padding-right: 32px;
+@media screen and (min-width: 992px) {
+  main {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1140px;
+  }
 }
 
 .flex-horizontal {
@@ -54,6 +57,34 @@ main {
   justify-content: center;
   padding: 10px;
   width: 100%;
+}
+
+.home-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-logo {
+  height: auto;
+}
+
+@media screen and (min-width: 0) {
+  .home-logo {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .home-logo {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-logo {
+    width: 400px;
+  }
 }
 
 /* CSS for MinutesList */
