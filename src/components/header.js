@@ -1,6 +1,9 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
+// Disabling this warning because the interactive div is only shown on touch devices
+// It doesn't make sense to have a keyboard listener only for a touch device
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -10,21 +13,20 @@ export default class Header extends React.Component {
     this.state = { showNav: undefined, isMobile: undefined };
 
     this.toggleNav = this.toggleNav.bind(this);
+    this.initializeStates = this.initializeStates.bind(this);
+    this.closeNav = this.closeNav.bind(this);
   }
 
   componentDidMount() {
     // Can only set the showNav state once the component has mounted
     this.initializeStates();
-    window.addEventListener('resize', this.initializeStates.bind(this));
+    window.addEventListener('resize', this.initializeStates);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.initializeStates.bind(this));
+    window.removeEventListener('resize', this.initializeStates);
   }
 
-  /**
-   * Set the show nav state.
-   */
   initializeStates() {
     this.setState({
       showNav: window.innerWidth >= 1024,
@@ -96,7 +98,12 @@ export default class Header extends React.Component {
             </li>
           </ul>
           {this.state.showNav && this.state.isMobile && (
-            <div role="button" className="menu-backdrop" onClick={this.closeNav.bind(this)} tabIndex={0}></div>
+            <div
+              role="button"
+              className="menu-backdrop"
+              onClick={this.closeNav}
+              tabIndex={0}
+            ></div>
           )}
         </nav>
       </header>
