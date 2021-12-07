@@ -29,8 +29,8 @@ export default class Header extends React.Component {
 
   initializeStates() {
     this.setState({
-      showNav: window.innerWidth >= 1024,
-      isMobile: window.innerWidth < 1024,
+      showNav: window.innerWidth >= 768,
+      isMobile: window.innerWidth < 768,
     });
   }
 

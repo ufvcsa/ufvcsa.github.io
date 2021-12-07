@@ -1,7 +1,10 @@
 :root {
   /* General - Dimensions */
-  --site-left: 10%;
-  --site-right: 10%;
+  --site-max-width-xs: 100%;
+  --site-max-width-s: 540px;
+  --site-max-width-m: 720px;
+  --site-max-width-l: 960px;
+  --site-max-width-xl: 1140px;
 
   /* Colours */
   --primary: rgb(30, 30, 30);
@@ -9,14 +12,7 @@
   --site-bg: #f8f8f8;
 
   --footer-height: 60px;
-  --gap: 24px;
   --content-gap: 20px;
   --nav-width: 1024px;
   --radius: 8px;
-}
-
-@media screen and (max-width: 768px) {
-  :root {
-    --gap: 14px;
-  }
 }

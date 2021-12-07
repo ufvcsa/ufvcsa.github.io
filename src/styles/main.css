@@ -9,6 +9,7 @@ div {
 
 ul,
 ol {
+  margin: 1rem 0;
   padding-inline-start: 40px;
 }
 
@@ -17,30 +18,6 @@ main {
   box-sizing: border-box;
   margin: 20px auto;
   padding: 0 15px;
-}
-
-@media screen and (min-width: 576px) {
-  main {
-    max-width: 540px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  main {
-    max-width: 720px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  main {
-    max-width: 960px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  main {
-    max-width: 1140px;
-  }
 }
 
 .flex-horizontal {
@@ -69,6 +46,8 @@ main {
   height: auto;
 }
 
+/* Media Queries */
+
 @media screen and (min-width: 0) {
   .home-logo {
     width: 300px;
@@ -76,14 +55,34 @@ main {
 }
 
 @media screen and (min-width: 576px) {
+  main {
+    max-width: var(--site-max-width-s);
+  }
+
   .home-logo {
     width: 350px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    max-width: var(--site-max-width-m);
+  }
+
   .home-logo {
     width: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    max-width: var(--site-max-width-l);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: var(--site-max-width-xl);
   }
 }
 
@@ -91,7 +90,8 @@ main {
 
 ul.minutesList {
   display: grid;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 2rem;
