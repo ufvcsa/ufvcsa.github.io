@@ -1,0 +1,18 @@
+:root {
+  /* General - Dimensions */
+  --site-max-width-xs: 100%;
+  --site-max-width-s: 540px;
+  --site-max-width-m: 720px;
+  --site-max-width-l: 960px;
+  --site-max-width-xl: 1140px;
+
+  /* Colours */
+  --primary: rgb(30, 30, 30);
+  --nav-highlight: #00703c;
+  --site-bg: #f8f8f8;
+
+  --footer-height: 60px;
+  --content-gap: 20px;
+  --nav-width: 1024px;
+  --radius: 8px;
+}

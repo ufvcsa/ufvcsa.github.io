@@ -18,10 +18,15 @@ const genericPage = ({
 
   return (
     <Layout>
-      <article>
+      <article className="genericPage">
         <SEO title={frontmatter.title} />
-        <h1>{frontmatter.title}</h1>
-        <section className="page-heading">
+        <div className="page__title">
+          <h1>{frontmatter.title}</h1>
+          {frontmatter.date != null ? (
+            <p>Document Created: {new Date(frontmatter.date).toDateString()}</p>
+          ) : null}
+        </div>
+        <section className="page__content">
           <MDXProvider components={shortcodes}>
             <MDXRenderer>{body}</MDXRenderer>
           </MDXProvider>
